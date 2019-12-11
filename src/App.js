@@ -49,8 +49,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-<MainForm />
-<MainSummary/>
+<MainForm selected={this.state.selected} 
+features={this.props.selected} />
+<MainSummary selected={this.state.selected}
+ features={this.props.selected}/>
 
         </div>
     );
@@ -58,3 +60,4 @@ class App extends Component {
 }
 
 export default App;
+
